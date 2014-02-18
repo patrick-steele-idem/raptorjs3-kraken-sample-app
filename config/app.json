@@ -1,0 +1,51 @@
+{
+    
+    "express": {
+        "x-powered-by": false,
+        "trust proxy": false,
+        "jsonp callback name": null,
+        "json replacer": null,
+        "json spaces": 0,
+        "case sensitive routing": false,
+        "strict routing": false
+    },
+
+    "middleware": {
+        "static": {
+            "enabled": true,
+            "priority": 20,
+            "module": "express",
+            "route": "/static",
+            "arguments": [ "build" ]
+        },
+        "query": {
+            "enabled": true,
+            "module": "express",
+            "priority": 10
+        },
+        "compress": {
+            "enabled": true
+        }
+    },
+    "raptor-optimizer": {
+        "fileWriter": {
+            "outputDir": "path:./build",
+            "urlPrefix": "/static",
+            "includeSlotNames": false,
+            "checksumsEnabled": true
+        },
+        "enabledExtensions": ["browser"],
+        "filters": [
+            "minify-js",
+            "minify-css"
+        ],
+        "bundles": [
+            {
+                "name": "jquery",
+                "dependencies": [
+                    "require jquery"
+                ]
+            }
+        ]
+    }
+}

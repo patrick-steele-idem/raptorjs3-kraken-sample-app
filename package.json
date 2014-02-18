@@ -1,0 +1,27 @@
+{
+  "name": "unified",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "raptor-templates": "~0.1.0-SNAPSHOT",
+    "raptor-optimizer": "~0.1.0-SNAPSHOT",
+    "raptor-widgets": "~0.1.0-SNAPSHOT",
+    "raptor-logging": "~0.1.0-SNAPSHOT",
+    "raptor-renderer": "~0.1.0-SNAPSHOT",
+    "socket.io": "~0.9.16",
+    "express": "~3.4.8",
+    "meddleware": "0.0.1",
+    "express-resetter": "~1.0.1",
+    "hot-reload-browser-refresh": "0.1.0",
+    "q": "~1.0.0",
+    "app-module-path": "~0.1.0",
+    "jquery": "~2.1.0"
+  }
+}

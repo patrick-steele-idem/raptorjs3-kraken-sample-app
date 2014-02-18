@@ -1,0 +1,7 @@
+{
+    "custom": {
+        "enabled": true,
+        "priority": 10,
+        "module": "./custom-middleware.js"
+    }   
+}

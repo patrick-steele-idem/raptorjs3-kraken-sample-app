@@ -1,0 +1,31 @@
+{
+    "middleware": {
+        "staticsrc": {
+            "enabled": true,
+            "priority": 20,
+            "module": "express",
+            "factoryMethod": "static",
+            "route": "/src",
+            "arguments": [ "path:./" ]
+        }
+    },
+    "raptor-optimizer": {
+        "bundlingEnabled": false,
+        "fileWriter": {
+            "outputDir": "path:./build",
+            "urlPrefix": "/static",
+            "checksumsEnabled": false
+        },
+        "inPlaceDeployment": {
+            "enabled": true,
+            "urlPrefix": "/src"
+        },
+        "filters": []
+    },
+    "raptor-logging": {
+        "loggers": {
+            "raptor-optimizer": "DEBUG",
+            "raptor-modules": "DEBUG"
+        }
+    }
+}

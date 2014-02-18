@@ -1,0 +1,23 @@
+{
+    "watch": [
+        "config/",
+        "src/",
+        "init-app.js",
+        "routes.js",
+        "package.json"
+    ],
+    "logging-enabled": true,
+    "plugins": {
+        "hot-reload-uncache-modules": {
+            "enabled": true,
+            "uncache": "*" // Uncache all cached Node modules
+        },
+        "hot-reload-browser-refresh": {
+            "enabled": true,
+            "port": 9000
+        },
+        "./hot-reload": {
+            "enabled": true
+        }
+    }
+}

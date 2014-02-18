@@ -1,0 +1,6 @@
+{
+    "namespace": "app",
+    "tags": {
+        "simple": "./ui-components/simple/raptor-tag.json"
+    }
+}
