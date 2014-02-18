@@ -2,7 +2,6 @@
     "watch": [
         "config/",
         "src/",
-        "init-app.js",
         "routes.js",
         "package.json"
     ],
