@@ -18,8 +18,8 @@
     "raptor-renderer": "~0.1.0-SNAPSHOT",
     "socket.io": "~0.9.16",
     "express": "~3.4.8",
-    "meddleware": "0.0.1",
-    "hot-reload-browser-refresh": "0.1.0",
+    "meddleware": "~0.0.1",
+    "hot-reload-browser-refresh": "~0.1.1",
     "q": "~1.0.0",
     "jquery": "~2.1.0"
   }
