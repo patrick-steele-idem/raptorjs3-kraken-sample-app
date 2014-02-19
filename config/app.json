@@ -41,6 +41,12 @@
         ],
         "bundles": [
             {
+                "name": "core",
+                "dependencies": [
+                    "raptor-modules/client"
+                ]
+            },
+            {
                 "name": "jquery",
                 "dependencies": [
                     "require jquery"

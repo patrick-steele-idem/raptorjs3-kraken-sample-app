@@ -24,8 +24,8 @@
     },
     "raptor-logging": {
         "loggers": {
-            "raptor-optimizer": "DEBUG",
-            "raptor-modules": "DEBUG"
+            "raptor-optimizer": "WARN",
+            "raptor-modules": "WARN"
         }
     }
 }
