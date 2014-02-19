@@ -18,7 +18,9 @@ function onconfig(settings, cb) {
 
     optimizer
         .configureDefault(settings.get('raptor-optimizer'), __dirname)
-        .then(cb(null, settings))
+        .then(function ready() {
+            cb(null, settings);
+        })
         .fail(cb);
 }
 
