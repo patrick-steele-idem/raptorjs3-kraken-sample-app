@@ -12,15 +12,29 @@
     "raptor-optimizer": {
         "bundlingEnabled": false,
         "fileWriter": {
-            "outputDir": "path:./build",
-            "urlPrefix": "/static",
             "checksumsEnabled": false
         },
         "inPlaceDeployment": {
             "enabled": true,
             "urlPrefix": "/src"
         },
-        "filters": []
+        "filters": [],
+        "cache": {
+            "dependencyChecksums": {
+                "disk": {
+                    "read": true,
+                    "write": true,
+                    "dir": "path:./work/raptor-optimizer"
+                }
+            },
+            "requires": {
+                "disk": {
+                    "read": true,
+                    "write": true,
+                    "dir": "path:./work/raptor-optimizer"
+                }
+            }
+        }
     },
     "raptor-logging": {
         "loggers": {

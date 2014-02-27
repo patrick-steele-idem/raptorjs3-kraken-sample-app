@@ -28,6 +28,9 @@
         }
     },
     "raptor-optimizer": {
+        "plugins": {
+            "raptor-templates/optimizer-plugin": {}
+        },
         "fileWriter": {
             "outputDir": "path:./build",
             "urlPrefix": "/static",
@@ -36,9 +39,20 @@
         },
         "enabledExtensions": ["browser"],
         "filters": [
-            "minify-js",
-            "minify-css"
+            "resolve-css-urls"
         ],
+        "cache": {
+            "DEFAULT": {
+                "disk": {
+                    "read": true,
+                    "write": false,
+                    "dir": "path:./work/raptor-optimizer"
+                },
+                "memory": {
+                    "maxEntries": -1
+                }
+            }
+        },
         "bundles": [
             {
                 "name": "core",
