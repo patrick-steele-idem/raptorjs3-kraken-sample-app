@@ -1,0 +1,6 @@
+{
+    "dependencies": [
+        "template.rhtml",
+        "require ./widget"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "renderer": "./renderer.js",
+    "attributes": {
+        "message": "string"
+    }
+}
