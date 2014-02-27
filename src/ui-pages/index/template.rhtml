@@ -1,10 +1,4 @@
-<optimizer:page name="index" extensions="jquery">
-    <optimizer:dependencies>
-        <require path="raptor-widgets"/>
-        <require path="jquery"/>
-        <package path="../../ui-components/simple"/>
-    </optimizer:dependencies>
-</optimizer:page>
+<optimizer:page name="index" extensions="jquery" package-path="./optimizer.json" />
 
 <!doctype html>
 <html lang="en">
@@ -16,9 +10,10 @@
 <body>
     <h1>Hello ${data.name}! You have $data.count new messages</h1>
     
-    <app:simple name="World" style="background-color: yellow;"/>
-    <app:simple name="World" style="background-color: orange;"/>
-    <app:simple name="World" style="background-color: green;"/>
+    <app:foo message="Hello"/>
+    <app:simple name="World" style="background-color: yellow;" time="data.time"/>
+    <app:simple name="World" style="background-color: orange;" time="data.time"/>
+    <app:simple name="World" style="background-color: green;" time="data.time"/>
     
     <optimizer:body/>
 
