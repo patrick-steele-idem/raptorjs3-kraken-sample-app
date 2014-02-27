@@ -1,5 +1,6 @@
 {
     "dependencies": [
+        "./template.rhtml",
         "style.css",
         "require ./widget.js"
     ]

@@ -1,11 +1,17 @@
+var foo = require('../foo');
+
 function Widget(widgetConfig) {
     console.log('Initializing widget: ', __filename);
-    this.$().click(function() {
+    this.$().click(function(event) {
         this.setBackgroundColor('red');
 
-        require('./index').render({
-            name: 'Client'
-        }).appendTo(this.getEl('renderTarget'));
+        event.stopPropagation();
+
+        foo.render(
+            {
+                message: 'Rendered by widget ' + this.id
+            })
+            .appendTo(this.getEl('renderTarget'));
 
         this.publish('click', {
             widget: this,
@@ -14,7 +20,7 @@ function Widget(widgetConfig) {
     }.bind(this));
 }
 
-Widget.prototype ={
+Widget.prototype = {
     setBackgroundColor: function(color) {
         this.$().css('background-color', color);
     }
