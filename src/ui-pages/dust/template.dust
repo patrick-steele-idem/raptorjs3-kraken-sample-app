@@ -1,0 +1,19 @@
+{@optimizerPage name="index" extensions="jquery" packagePath="/ui-pages/dust/optimizer.json" /}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dust Demo</title>
+    
+    {@optimizerHead /}
+</head>
+<body>
+    <h1>Dust Demo</h1>
+
+    This page was rendered on the server using Dust.
+    
+    {@optimizerBody /}
+
+</body>
+</html>

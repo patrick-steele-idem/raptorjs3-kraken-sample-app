@@ -2,8 +2,10 @@
 
 var express = require('express');
 var kraken = require('kraken.next');
-var logger = require('raptor-logging');
-var optimizer = require('raptor-optimizer');
+var raptorLogging = require('raptor-logging');
+var raptorOptimizer = require('raptor-optimizer');
+var raptorDust = require('raptor-dust');
+var dust = require('dustjs-linkedin');
 
 var PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;
 
@@ -13,10 +15,13 @@ var PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;
  * @param cb continuation callback: `cb(err, settings)`
  */
 function onconfig(settings, cb) {
-    logger
+    raptorLogging
         .configure(settings.get('raptor-logging'));
 
-    optimizer
+    raptorDust
+        .configure(dust, settings.get('raptor-dust'));
+
+    raptorOptimizer
         .configureDefault(settings.get('raptor-optimizer'), __dirname)
         .then(function ready() {
             cb(null, settings);

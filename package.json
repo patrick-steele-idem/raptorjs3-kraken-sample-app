@@ -21,6 +21,7 @@
     "meddleware": "~0.0.1",
     "hot-reload-browser-refresh": "~0.1.1",
     "q": "~1.0.0",
-    "jquery": "~2.1.0"
+    "jquery": "~2.1.0",
+    "dustjs-linkedin": "~2.2.7"
   }
 }
