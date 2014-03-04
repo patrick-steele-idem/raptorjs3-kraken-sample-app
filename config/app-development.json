@@ -18,7 +18,7 @@
             "enabled": true,
             "urlPrefix": "/src"
         },
-        "filters": [],
+        "transforms": [],
         "cache": {
             "dependencyChecksums": {
                 "disk": {
