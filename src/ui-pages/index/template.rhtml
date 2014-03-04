@@ -10,10 +10,14 @@
 <body>
     <h1>Hello ${data.name}! You have $data.count new messages</h1>
     
-    <app:foo message="Hello"/>
-    <app:simple name="World" style="background-color: yellow;" time="data.time"/>
-    <app:simple name="World" style="background-color: orange;" time="data.time"/>
-    <app:simple name="World" style="background-color: green;" time="data.time"/>
+    <div class="box">
+        <div class="box-shadow">
+            <app:foo message="Hello"/>
+            <app:simple name="World" style="background-color: yellow;" time="data.time"/>
+            <app:simple name="World" style="background-color: orange;" time="data.time"/>
+            <app:simple name="World" style="background-color: green;" time="data.time"/>
+        </div>
+    </div>
     
     <optimizer:body/>
 

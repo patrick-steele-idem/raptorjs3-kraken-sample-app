@@ -16,6 +16,7 @@
     "raptor-widgets": "^0.2.0-beta",
     "raptor-logging": "^0.2.0-beta",
     "raptor-renderer": "^0.2.0-beta",
+    "raptor-optimizer-less": "^0.1.0-beta",
     "raptor-dust": "^0.3.0-beta",
     "socket.io": "~0.9.16",
     "express": "~3.4.8",

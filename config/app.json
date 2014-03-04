@@ -29,7 +29,8 @@
     },
     "raptor-optimizer": {
         "plugins": {
-            "raptor-templates/optimizer-plugin": {}
+            "raptor-templates/optimizer-plugin": {},
+            "raptor-optimizer-less": {}
         },
         "fileWriter": {
             "outputDir": "path:./build",

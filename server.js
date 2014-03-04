@@ -22,7 +22,7 @@ function onconfig(settings, cb) {
         .configure(dust, settings.get('raptor-dust'));
 
     raptorOptimizer
-        .configureDefault(settings.get('raptor-optimizer'), __dirname)
+        .configure(settings.get('raptor-optimizer'), __dirname)
         .then(function ready() {
             cb(null, settings);
         })

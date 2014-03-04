@@ -2,6 +2,7 @@
     "dependencies": [
         "require raptor-widgets",
         "require jquery",
-        "../../ui-components/simple"
+        "../../ui-components/simple/optimizer.json",
+        "style.less"
     ]
 }
