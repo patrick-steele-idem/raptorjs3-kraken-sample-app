@@ -16,7 +16,7 @@
             "priority": 20,
             "module": "express",
             "route": "/static",
-            "arguments": [ "build" ]
+            "arguments": [ "static" ]
         },
         "query": {
             "enabled": true,
@@ -34,7 +34,7 @@
             "raptor-optimizer-less": {}
         },
         "fileWriter": {
-            "outputDir": "path:./build",
+            "outputDir": "path:./static",
             "urlPrefix": "/static",
             "includeSlotNames": false,
             "checksumsEnabled": true
@@ -59,7 +59,7 @@
             {
                 "name": "core",
                 "dependencies": [
-                    "raptor-modules/client"
+                    "raptor-modules/client/optimizer.json"
                 ]
             },
             {
