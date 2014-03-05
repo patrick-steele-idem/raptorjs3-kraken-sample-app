@@ -6,6 +6,10 @@ var raptorLogging = require('raptor-logging');
 var raptorOptimizer = require('raptor-optimizer');
 var raptorDust = require('raptor-dust');
 var dust = require('dustjs-linkedin');
+var nodePath = require('path');
+var fs = require('fs');
+
+
 
 var PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;
 
@@ -19,7 +23,21 @@ function onconfig(settings, cb) {
         .configure(settings.get('raptor-logging'));
 
     raptorDust
-        .configure(dust, settings.get('raptor-dust'));
+        .addHelpers(dust, settings.get('raptor-dust'));
+
+    var dustBaseDir = settings.get('raptor-dust').baseDir;
+
+    dust.onLoad = function(path, callback) {
+        if (!fs.existsSync(path)) {
+            if (!path.endsWith('.dust')) {
+                path += '.dust';
+            }
+
+            path = nodePath.join(dustBaseDir || process.cwd(), path);
+        }
+
+        fs.readFile(path, 'utf-8', callback);
+    };
 
     raptorOptimizer
         .configure(settings.get('raptor-optimizer'), __dirname)
