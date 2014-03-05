@@ -1,7 +1,5 @@
 {
     "dependencies": [
-        "require raptor-widgets",
-        "require jquery",
-        "../../ui-components/simple"
+        "require jquery"
     ]
 }
