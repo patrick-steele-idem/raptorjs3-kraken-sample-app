@@ -27,6 +27,7 @@
     "q": "~1.0.0",
     "jquery": "~2.1.0",
     "dustjs-linkedin": "~2.2.7",
-    "raptor-modules": "^0.2.3-beta"
+    "raptor-modules": "^0.2.3-beta",
+    "raptor-optimizer-taglib": "^0.1.4-beta"
   }
 }
