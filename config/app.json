@@ -57,12 +57,6 @@
         },
         "bundles": [
             {
-                "name": "core",
-                "dependencies": [
-                    "raptor-modules/client/optimizer.json"
-                ]
-            },
-            {
                 "name": "jquery",
                 "dependencies": [
                     "require jquery"
