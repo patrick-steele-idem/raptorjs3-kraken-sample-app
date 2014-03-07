@@ -1,4 +1,4 @@
 {
     "namespace": "app",
-    "tags-dir": "./ui-components"
+    "tags-dir": "./components"
 }
