@@ -1,8 +1,0 @@
-{
-    "renderer": "./renderer",
-    "attributes": {
-        "name": "string",
-        "time": "expression",
-        "*": "string"
-    }
-}
