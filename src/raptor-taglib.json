@@ -1,7 +1,4 @@
 {
     "namespace": "app",
-    "tags": {
-        "foo": "./ui-components/foo/raptor-tag.json",
-        "simple": "./ui-components/simple/raptor-tag.json"
-    }
+    "tags-dir": "./ui-components"
 }
