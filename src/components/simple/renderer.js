@@ -6,7 +6,7 @@ exports.tag = {
     attributes: {
         name: 'string',
         time: 'expression',
-        "*": 'string'
+        '*': 'string'
     }
 };
 
